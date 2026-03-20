@@ -1,16 +1,43 @@
+
 body {
     background-color: black;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    background-attachment: fixed;
+    
     color: whitesmoke;
-    font-family: 'Press Start 2P', cursive; /* ¡Fuente pixel! */
+    font-family: 'Press Start 2P', cursive;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
 }
 
+
 h1 {
+    font-size: 3rem;
     text-align: center;
-    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    
+    
+    background: linear-gradient(to bottom, #FFD700 0%, #C49121 50%, #4a370d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+    filter: drop-shadow(4px 4px 0px #000);
 }
+
+h2 {
+    font-size: 1rem; 
+    color: #6F5E38; 
+    margin-top: -10px; 
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 
 p {
     text-align: center;
@@ -18,10 +45,39 @@ p {
     margin: 0 auto 20px auto;
 }
 
+
 nav {
-    text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;                
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #333; 
+    border-bottom: 1px solid #333;
 }
+
+nav a {
+    color: #00d4ff; 
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase; 
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; 
+    transform: scale(1.1); 
+}
+
+nav a:hover::before {
+    content: '>'; 
+    position: absolute;
+    left: -20px;
+    color: #00d4ff;
+}
+
 
 a {
     color: #4da6ff;
@@ -34,11 +90,13 @@ a:hover {
     color: #fff;
 }
 
+
 img {
     display: block;
     margin: 40px auto 0 auto;
     max-width: 300px;
     height: auto;
+    image-rendering: pixelated; 
 }
 
 hr {
@@ -48,21 +106,62 @@ hr {
 }
 
 
+footer {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 2;
+}
+
+.gold-text {
+    color: #C49121;
+}
+
+.cyan-text {
+    color: #00d4ff; 
+}
+
+
 @media (max-width: 600px) {
     body {
         padding: 10px;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
     }
 
     nav a {
-        display: block;
-        margin: 10px 0;
+        font-size: 1rem;
     }
     
     img {
         max-width: 80%;
     }
+}
+
+.linktree-container a {
+    display: inline-block;
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #333; /* Un borde sutil */
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.linktree-container a:hover {
+    background-color: #333; /* Se oscurece al pasar el mouse */
+    border-color: #4da6ff;
+    transform: scale(1.05);
 }

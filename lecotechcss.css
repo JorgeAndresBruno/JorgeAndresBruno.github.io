@@ -1,0 +1,232 @@
+/* --- VARIABLES DE COLOR (Corporate Palette) --- */
+:root {
+    --bg-color: #f4f7f6; /* Gris muy claro de fondo */
+    --text-color: #333; /* Gris oscuro para el texto principal */
+    --text-muted: #666; /* Gris medio para descripciones */
+    --card-bg: #ffffff; /* Blanco puro para las tarjetas */
+    --brand-dark: #1a1a1a; /* Negro casi puro para títulos */
+    --accent-color: #C49121; /* Tu dorado original, usado muy sutilmente */
+    --whatsapp-green: #25D366; /* Verde oficial de WhatsApp */
+    --border-color: #e1e8ed; /* Gris claro para bordes */
+}
+
+/* --- RESET & LAYOUT --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif; /* Fuente sans-serif moderna */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- CABECERA (Header) --- */
+.main-header {
+    background-color: var(--brand-dark);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-color); /* Sutil eco de tu dorado */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.header-logo {
+    max-width: 50px;
+    height: auto;
+    image-rendering: auto; /* Ya no pixelada */
+}
+
+.brand-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ccc;
+}
+
+/* --- TARJETAS (Cards) --- */
+.card {
+    background-color: var(--card-bg);
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra muy suave */
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--brand-dark);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* --- SERVICIOS GRID --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.service-item {
+    background-color: #fafafa;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.service-item .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--brand-dark);
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* --- ZONA Y CONTACTO --- */
+.location-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.final-cta-section {
+    text-align: center;
+}
+
+.cta-highlight {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: darkgreen;
+    margin: 20px 0;
+}
+
+.phone-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-dark);
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #eee;
+    color: var(--text-muted);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.back-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* --- BOTÓN FLOTANTE DE WHATSAPP (EL ESTÁNDAR) --- */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--whatsapp-green);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000; /* Siempre por encima de todo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+}
+
+.whatsapp-icon-img {
+    width: 35px; /* Ajustamos el tamaño de la imagen dentro del botón */
+    height: auto;
+}
+
+/* --- RESPONSIVE (CELULARES) --- */
+@media (max-width: 600px) {
+    .card {
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    .brand-name {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-icon-img {
+        width: 30px;
+    }
+}
