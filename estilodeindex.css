@@ -79,16 +79,38 @@ nav a:hover::before {
 }
 
 
+.temallum {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px #fff;
+    
+}
+
+.temallum:hover{
+    color:#FFD700;
+    text-shadow: 0 0 30px #fff;
+    
+    
+    
+}
+
+.center {
+    text-align: center;
+}
+
 a {
     color: #4da6ff;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 a:hover {
     text-decoration: underline;
     color: #fff;
 }
+
 
 
 img {
@@ -104,6 +126,8 @@ hr {
     border-top: 1px solid #333;
     margin: 30px 0;
 }
+
+
 
 
 footer {
@@ -155,13 +179,13 @@ footer {
     display: inline-block;
     padding: 15px;
     width: 80%;
-    border: 2px solid #333; /* Un borde sutil */
+    border: 2px solid #333; 
     margin: 10px 0;
     transition: 0.3s;
 }
 
 .linktree-container a:hover {
-    background-color: #333; /* Se oscurece al pasar el mouse */
+    background-color: #333; 
     border-color: #4da6ff;
     transform: scale(1.05);
 }

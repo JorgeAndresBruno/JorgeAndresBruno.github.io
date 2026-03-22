@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'fuentegotica'; 
+    src: url('../fuentes/GermaniaOne-Regular.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #121212;
+    color: #F5F5F5 ;
+    font-family: fuentegotica;
+    
+}
+
+h1 {text-align: center;
+    color: #F9D71C;
+    font-size: 60px;
+}
+
+h3{
+    text-align: center;
+    color: #ad9614;
+}
+
+.reading-area {
+    max-width: 700px;       
+    margin: 0 auto;          
+    padding: 2rem;           
+    font-size: 1.1rem;       
+    line-height: 1.8;        
+}
+
+nav{
+    text-align: center;
+    
+}
+
+a{
+    
+    color: #b8870b;
+    text-shadow: 0 0 10px  #02d5ff;
+    font-size: 30px;
+    margin: 10px;
+
+}
+
+a:hover{
+    color: black;
+    text-shadow:0 0 10px  #EFBF04;
+    text-transform:  uppercase;
+    
+    
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.logo{
+    width: 300px;
+    filter: drop-shadow(0 0 10px #b8860b80);
+}
+
+
+footer {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+
+    img {max-width: 80%;}
+
+}
