@@ -12,244 +12,170 @@
     font-style: normal;
 }
 
-h1{
-    color: rgb(243, 243, 243);
-    background-color: #0f8b24;
-    text-align: center;
-    font-size: 80px;
-    font-family: "titulo";
-    margin-bottom: 30px; 
-    padding-bottom: 2px;
-    letter-spacing: 5px ;
-    
-
-}
-
-h1:hover{
-    text-shadow: 0 0 10px; color: white;
-    font-size:81px;
-    
-}
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-shadow: border-box;
-    background-color: white;
-}
-
 body {
+    text-align: center;
+    font-family: "parrafo", sans-serif;
     background-color: black;
-    color: var(--text-color);
-    font-family: 'parrafo', sans-serif; 
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+    color: white;
+    margin: 0;
+    padding: 20px;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-
-.main-header {
-    
-    color: rgb(240, 156, 0);
-    padding: 30px 0;
-    text-align: center;
-    
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-.header-logo {
-    max-width: 50px;
-    height: auto;
-    image-rendering: auto; 
-}
-
-.brand-name {
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-
-.tagline {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #ccc;
-}
-
-
-.card {
-    
-    padding: 40px;
-    margin-top: 30px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    ; 
-}
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--brand-dark);
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-
-
-
-.service-item {
-    background-color: #fafafa;
-    padding: 25px;
-    border-radius: 6px;
-    border: 1px solid var(--border-color);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.service-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-}
-
-.service-item .icon {
-    font-size: 2.5rem;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.service-item h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--brand-dark);
-    margin-bottom: 10px;
-}
-
-.service-item p {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-}
-
-
-.location-text {
-    text-align: center;
-    font-size: 1.2rem;
-    color: black;
-    background-color: white;
-}
-
-.highlight {
-    color: black;
-    background-color: white;
-    font-weight: 600;
-}
-
-.final-cta-section {
-    text-align: center;
-    color: black;
-    background-color: white;
-}
-
-.cta-highlight {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: darkgreen;
+h1 {
+    font-family: "titulo", sans-serif;
+    color: #00FF00; 
+    background-color: #134611;
+    font-size: 60px;
     margin: 20px 0;
+    padding: 10px;
+    border: 2px solid white;
 }
 
-.phone-number {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--brand-dark);
+marquee {
+    font-family: monospace;
+    color: #ffca28; 
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.main-footer {
-    background-color: #eee;
-    color: var(--text-muted);
-    padding: 30px 0;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border-color);
-}
-
-.back-link {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 600;
+code {
     display: inline-block;
-    margin-top: 10px;
+    background-color: #222;
+    padding: 5px;
+    margin: 5px 0;
+    color: #00FF00;
 }
 
-.back-link:hover {
-    text-decoration: underline;
+main, section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #134611;
+    background-color: #0a0a0a;
 }
 
-
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    right: 30px;
-    background-color: var(--whatsapp-green);
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 1000; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+h2, h3 {
+    color: #00FF00;
+    text-transform: uppercase;
 }
 
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+.boton-wsp {
+    display: inline-block;
+    background-color: #25d366;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-.whatsapp-icon-img {
-    width: 35px; 
-    height: auto;
+.boton-wsp:hover {
+    background-color: white;
+}
+
+hr {
+    border: 0;
+    border-top: 1px double #134611;
+    margin: 40px 0;
 }
 
 
 @media (max-width: 600px) {
-    .card {
-        padding: 25px;
-        margin-top: 20px;
+    h1 {
+        font-size: 35px;
     }
-
-    .brand-name {
-        font-size: 1.8rem;
+    body {
+        padding: 10px;
     }
+}@font-face {
+    font-family: 'titulo'; 
+    src: url('fuentes/Orbitron-VariableFont_wght.woff2') format("woff2"); 
+    font-weight: normal;
+    font-style: normal;
+}
 
-    h2 {
-        font-size: 1.5rem;
+@font-face {
+    font-family: 'parrafo'; 
+    src: url('fuentes/SpaceGrotesk-VariableFont_wght.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    font-family: "parrafo", sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "titulo", sans-serif;
+    color: #00FF00; 
+    background-color: #134611;
+    font-size: 60px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+marquee {
+    font-family: monospace;
+    color: #ffca28; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+code {
+    display: inline-block;
+    background-color: #222;
+    padding: 5px;
+    margin: 5px 0;
+    color: #00FF00;
+}
+
+main, section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #134611;
+    background-color: #0a0a0a;
+}
+
+h2, h3 {
+    color: #00FF00;
+    text-transform: uppercase;
+}
+
+.boton-wsp {
+    display: inline-block;
+    background-color: #25d366;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.boton-wsp:hover {
+    background-color: white;
+}
+
+hr {
+    border: 0;
+    border-top: 1px double #134611;
+    margin: 40px 0;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 35px;
     }
-
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .whatsapp-icon-img {
-        width: 30px;
+    body {
+        padding: 10px;
     }
 }

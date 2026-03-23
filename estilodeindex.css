@@ -1,15 +1,12 @@
 
 body {
-    background-color: black;
-    
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
-    background-attachment: fixed;
-    
+    background-color: #050505; 
     color: whitesmoke;
     font-family: 'Press Start 2P', cursive;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    
 }
 
 
@@ -25,7 +22,6 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     
     filter: drop-shadow(4px 4px 0px #000);
 }
@@ -68,49 +64,68 @@ nav a {
 nav a:hover {
     color: #fff;
     text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; 
-    transform: scale(1.1); 
 }
+
 
 nav a:hover::before {
     content: '>'; 
     position: absolute;
-    left: -20px;
+    left: -25px;
     color: #00d4ff;
+}
+
+
+@keyframes pulso-terminal {
+    0% { opacity: 1; text-shadow: 0 0 5px lime; }
+    50% { opacity: 0.6; text-shadow: 0 0 20px lime; }
+    100% { opacity: 1; text-shadow: 0 0 5px lime; }
+}
+
+.minimal {
+    color: lime;
+    font-family: monospace; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    animation: pulso-terminal 2s infinite;
+}
+
+.minimal:hover {
+    background-color: lime;
+    color: black;
+    text-shadow: none;
 }
 
 
 .temallum {
     color: #FFD700;
     text-decoration: none;
-    font-size: 2.5rem;
-    text-shadow: 0 0 20px #fff;
-    
+    font-size: 2rem;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
 }
 
-.temallum:hover{
-    color:#FFD700;
+.temallum:hover {
     text-shadow: 0 0 30px #fff;
-    
-    
-    
+    transform: scale(1.05);
 }
 
 .center {
     text-align: center;
 }
 
+
 a {
     color: #4da6ff;
     text-decoration: none;
     font-weight: bold;
-    
+    transition: 0.2s;
 }
 
 a:hover {
     text-decoration: underline;
     color: #fff;
 }
-
 
 
 img {
@@ -127,9 +142,6 @@ hr {
     margin: 30px 0;
 }
 
-
-
-
 footer {
     margin-top: 60px;
     padding-bottom: 40px;
@@ -137,43 +149,31 @@ footer {
 }
 
 .footer-text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #666;
     line-height: 2;
 }
 
-.gold-text {
-    color: #C49121;
-}
-
-.cyan-text {
-    color: #00d4ff; 
-}
+.gold-text { color: #C49121; }
+.cyan-text { color: #00d4ff; }
 
 
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.8rem; 
-    }
-
+    h1 { font-size: 1.8rem; }
+    
     nav {
         flex-direction: column; 
         align-items: center;
         gap: 15px;
     }
 
-    nav a {
-        font-size: 1rem;
-    }
-    
-    img {
-        max-width: 80%;
-    }
+    nav a:hover::before { display: none; } 
+
+    .temallum { font-size: 1.5rem; }
+
+    img { max-width: 80%; }
 }
+
 
 .linktree-container a {
     display: inline-block;
@@ -181,11 +181,11 @@ footer {
     width: 80%;
     border: 2px solid #333; 
     margin: 10px 0;
-    transition: 0.3s;
+    text-transform: uppercase;
 }
 
 .linktree-container a:hover {
-    background-color: #333; 
+    background-color: #111; 
     border-color: #4da6ff;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
