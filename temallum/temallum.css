@@ -5,21 +5,47 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'temallum'; 
+    src: url('../fuentes/EagleLake-Regular.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body{
     background-color: #121212;
     color: #F5F5F5 ;
     font-family: fuentegotica;
+    text-align: center;
     
 }
-
-h1 {text-align: center;
-    color: #F9D71C;
+main{
+    
+    text-align: left;
+    
+}
+h1 {font-family: temallum;
+    text-align: center;
+    color: #91712C;
     font-size: 60px;
+    margin-bottom: -5px;
+    
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px ;
+    text-shadow: #1953BC;
 }
 
 h3{
     text-align: center;
-    color: #ad9614;
+    color: #91712C;
+    margin-top:  -20px ;
+    
+    border-bottom-color: #304367 ;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 
 .reading-area {
@@ -32,6 +58,8 @@ h3{
 
 nav{
     text-align: center;
+    text-shadow: #1953BC;
+    margin-bottom: 20px;
     
 }
 
@@ -76,4 +104,18 @@ footer {
 
     img {max-width: 80%;}
 
+}
+
+
+
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.item {
+    flex: 1 1 300px; 
 }

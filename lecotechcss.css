@@ -1,17 +1,33 @@
+@font-face {
+    font-family: 'titulo'; 
+    src: url('fuentes/Orbitron-VariableFont_wght.woff2') format("woff2"); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'parrafo'; 
+    src: url('fuentes/SpaceGrotesk-VariableFont_wght.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1{
     color: rgb(243, 243, 243);
     background-color: #0f8b24;
     text-align: center;
-    font-size: 60px;
-    font-family: "inter";
-    margin-bottom: 20px; 
+    font-size: 80px;
+    font-family: "titulo";
+    margin-bottom: 30px; 
     padding-bottom: 2px;
+    letter-spacing: 5px ;
+    
 
 }
 
 h1:hover{
     text-shadow: 0 0 10px; color: white;
-    font-size: 65px;
+    font-size:81px;
     
 }
 
@@ -22,12 +38,13 @@ h1:hover{
     margin: 0;
     padding: 0;
     box-shadow: border-box;
+    background-color: white;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: black;
     color: var(--text-color);
-    font-family: 'Inter', sans-serif; 
+    font-family: 'parrafo', sans-serif; 
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
@@ -41,7 +58,7 @@ body {
 
 .main-header {
     
-    color: white;
+    color: rgb(240, 156, 0);
     padding: 30px 0;
     text-align: center;
     
@@ -80,7 +97,7 @@ body {
     margin-top: 30px;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    ; 
 }
 
 h2 {
@@ -130,16 +147,20 @@ h2 {
 .location-text {
     text-align: center;
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: black;
+    background-color: white;
 }
 
 .highlight {
-    color: var(--accent-color);
+    color: black;
+    background-color: white;
     font-weight: 600;
 }
 
 .final-cta-section {
     text-align: center;
+    color: black;
+    background-color: white;
 }
 
 .cta-highlight {
