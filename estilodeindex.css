@@ -68,31 +68,22 @@ nav a:hover {
 
 
 nav a:hover::before {
-    content: '>'; 
+    
     position: absolute;
     left: -25px;
     color: #00d4ff;
 }
 
 
-@keyframes pulso-terminal {
-    0% { opacity: 1; text-shadow: 0 0 5px lime; }
-    50% { opacity: 0.6; text-shadow: 0 0 20px lime; }
-    100% { opacity: 1; text-shadow: 0 0 5px lime; }
-}
-
 .minimal {
-    color: lime;
-    font-family: monospace; 
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-    animation: pulso-terminal 2s infinite;
+    color: #e0e0e0;
+    font-family: Courier New'; 
+    
 }
 
 .minimal:hover {
-    background-color: lime;
-    color: black;
+    background-color: #e0e0e0;
+    color: #121212;
     text-shadow: none;
 }
 
