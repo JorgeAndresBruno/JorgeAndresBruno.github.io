@@ -13,6 +13,7 @@
 }
 
 
+
 body {
     background-color: #1a1a1a;
     color: #e0e0e0;
@@ -40,6 +41,22 @@ h1:hover {
     text-shadow: 0px 0px 20px rgba(239, 191, 4, 0.4);
 }
 
+h2 {
+    font-family: 'temallum', serif;
+    color: #91712C;
+    font-size: clamp(18px, 4vw, 26px);
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+h2:hover {
+    color: #EFBF04;
+    text-shadow: 0px 0px 20px rgba(239, 191, 4, 0.4);
+}
 
 h3 {
     font-family: 'temallum', serif;
@@ -49,6 +66,39 @@ h3 {
     font-weight: normal;
     font-style: italic;
     opacity: 0.8;
+}
+
+
+.titulo-juego {
+    font-family: 'fuentejuego', monospace;
+    color: #91712C;
+    font-size: clamp(12px, 2.5vw, 16px);
+    letter-spacing: 0.05em;
+    line-height: 2;
+    margin-bottom: 1rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.titulo-juego:hover {
+    color: #EFBF04;
+    text-shadow: 0px 0px 20px rgba(239, 191, 4, 0.4);
+}
+
+.tag-juego {
+    font-family: 'fuentejuego', monospace;
+    font-size: 0.6rem;
+    color: #91712C;
+    border: 1px solid #91712C;
+    padding: 3px 8px;
+    margin: 0 4px;
+    letter-spacing: 0.08em;
+    display: inline-block;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.tag-juego:hover {
+    color: #EFBF04;
+    border-color: #EFBF04;
 }
 
 
@@ -116,6 +166,12 @@ a:hover {
     filter: drop-shadow(0 0 20px rgba(239, 191, 4, 0.6)); 
 }
 
+.embed-container {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
 
 footer {
     margin-top: 80px;
@@ -133,5 +189,9 @@ footer {
     }
     .logo {
         width: 180px;
+    }
+    .embed-container iframe {
+        width: 100%;
+        height: auto;
     }
 }
