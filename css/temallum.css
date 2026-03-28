@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'fuentegotica'; 
+    src: url('../fuentes/GermaniaOne-Regular.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'temallum'; 
+    src: url('../fuentes/CinzelDecorative-Regular.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'fuentegotica', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'temallum', serif;
+    color: #91712C;
+    font-size: clamp(28px, 6vw, 40px); 
+    margin-bottom: 10px;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+h1:hover {
+    color: #EFBF04;
+    text-shadow: 0px 0px 20px rgba(239, 191, 4, 0.4);
+}
+
+h2 {
+    font-family: 'temallum', serif;
+    color: #91712C;
+    font-size: clamp(18px, 4vw, 26px);
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+h2:hover {
+    color: #EFBF04;
+    text-shadow: 0px 0px 20px rgba(239, 191, 4, 0.4);
+}
+
+h3 {
+    font-family: 'temallum', serif;
+    color: #91712C;
+    font-size: 1.2rem;
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+
+span.huevo {
+    color: transparent;
+}
+
+span.huevo:hover {
+    color: #EFBF04;
+    text-shadow: 0px 0px 20px white;
+}
+
+.titulo-juego {
+    font-family: 'fuentejuego', monospace;
+    color: #91712C;
+    font-size: clamp(12px, 2.5vw, 16px);
+    letter-spacing: 0.05em;
+    line-height: 2;
+    margin-bottom: 1rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.titulo-juego:hover {
+    color: #EFBF04;
+    text-shadow: 0px 0px 20px rgba(239, 191, 4, 0.4);
+}
+
+.tag-juego {
+    font-family: 'fuentejuego', monospace;
+    font-size: 0.6rem;
+    color: #91712C;
+    border: 1px solid #91712C;
+    padding: 3px 8px;
+    margin: 0 4px;
+    letter-spacing: 0.08em;
+    display: inline-block;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.tag-juego:hover {
+    color: #EFBF04;
+    border-color: #EFBF04;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #91712C;
+    margin: 30px auto;
+    width: 50%;
+    opacity: 0.5;
+}
+
+
+.reading-area {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 2rem;
+    text-align: left;
+    background-color: transparent;  
+    border: 2px solid #91712C;      
+    border-radius: 0;               
+    box-shadow: none;               
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.reading-area p {
+    margin-bottom: 1.5rem;
+}
+
+
+nav {
+    margin: 20px 0;
+}
+
+a {
+    color: #91712C;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: color 0.3s, border-bottom 0.3s, text-shadow 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #EFBF04;
+    border-bottom: 1px solid #EFBF04;
+    text-shadow: 0 0 8px rgba(239, 191, 4, 0.4);
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 250px;
+    filter: drop-shadow(0 0 15px rgba(145, 113, 44, 0.4));
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(239, 191, 4, 0.6)); 
+}
+
+.embed-container {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    color: #666666; 
+}
+
+
+@media (max-width: 600px) {
+    .reading-area {
+        padding: 1.5rem;
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+    .logo {
+        width: 180px;
+    }
+    .embed-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,23 +1,21 @@
 @font-face {
-    font-family: 'fuentegotica'; 
-    src: url('../fuentes/GermaniaOne-Regular.woff2') format('woff2'); 
+    font-family: 'pixel'; 
+    
+    src: url('../fuentes/PressStart2P-Regular.ttf') format("truetype"); 
     font-weight: normal;
     font-style: normal;
+    
+    font-display: swap; 
 }
 
-@font-face {
-    font-family: 'temallum'; 
-    src: url('../fuentes/CinzelDecorative-Regular.woff2') format('woff2'); 
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 
 body {
+
     background-color: #1a1a1a;
     color: #e0e0e0;
-    font-family: 'fuentegotica', serif;
+    font-family: "pixel";
     text-align: center;
     margin: 0;
     padding: 0;
@@ -25,7 +23,7 @@ body {
 }
 
 h1 {
-    font-family: 'temallum', serif;
+    
     color: #91712C;
     font-size: clamp(28px, 6vw, 40px); 
     margin-bottom: 10px;
@@ -42,7 +40,7 @@ h1:hover {
 }
 
 h2 {
-    font-family: 'temallum', serif;
+    
     color: #91712C;
     font-size: clamp(18px, 4vw, 26px);
     margin-bottom: 10px;
@@ -59,7 +57,7 @@ h2:hover {
 }
 
 h3 {
-    font-family: 'temallum', serif;
+    
     color: #91712C;
     font-size: 1.2rem;
     margin-top: 0;
@@ -69,37 +67,7 @@ h3 {
 }
 
 
-.titulo-juego {
-    font-family: 'fuentejuego', monospace;
-    color: #91712C;
-    font-size: clamp(12px, 2.5vw, 16px);
-    letter-spacing: 0.05em;
-    line-height: 2;
-    margin-bottom: 1rem;
-    transition: color 0.3s, text-shadow 0.3s;
-}
 
-.titulo-juego:hover {
-    color: #EFBF04;
-    text-shadow: 0px 0px 20px rgba(239, 191, 4, 0.4);
-}
-
-.tag-juego {
-    font-family: 'fuentejuego', monospace;
-    font-size: 0.6rem;
-    color: #91712C;
-    border: 1px solid #91712C;
-    padding: 3px 8px;
-    margin: 0 4px;
-    letter-spacing: 0.08em;
-    display: inline-block;
-    transition: color 0.3s, border-color 0.3s;
-}
-
-.tag-juego:hover {
-    color: #EFBF04;
-    border-color: #EFBF04;
-}
 
 
 hr {
