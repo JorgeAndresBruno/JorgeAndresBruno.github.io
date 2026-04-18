@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'activado';
+    src: url("../fuentes/PressStart2P-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 body {
@@ -85,6 +91,15 @@ nav a:hover::before {
     content: "► ";
 }
 
+nav a:active{
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: "activado";
+    letter-spacing: -10px;
+    border: 5px solid whitesmoke;
+    padding: 1px;
+    background-image: url(/imagenes/estrellas.webp) ;
+}
 
 hr {
     border: none;
