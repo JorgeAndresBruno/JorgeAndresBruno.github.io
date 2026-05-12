@@ -91,14 +91,22 @@ p {
     
 }
 
-
+.relojero{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: auto auto;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 
 header {
-    padding: 2.5rem 1rem 1.2rem;
+    padding:  1rem 1.2rem;
     position: relative;
     overflow: hidden;
     background: linear-gradient(160deg, #c2f4ff 0%, #ddfeff 50%, #f9e8ff 100%);
     border-bottom: 3px dashed #000;
+    margin-top: -20px;
 }
 
 #net-canvas {
@@ -141,14 +149,14 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    padding: 1rem 0 1.2rem;
+    
+    
 }
 
 nav a {
     font-family: 'texto', serif;
     color: rgb(0, 0, 0);
-    background-color: #8d778c;
+    background-color: #0d4723;
     margin: 5px;
     padding: 5px;
     border-radius: 10px/5px;
@@ -186,7 +194,7 @@ nav a:hover {
 }
 
 .correoelectro {
-    background-color: transparent;
+    background-color: white;
     position: fixed;
     left: 10px;
     top: 80%;
@@ -202,7 +210,7 @@ nav a:hover {
 }
 
 .correoelectro:hover {
-    background-color: transparent;
+    background-color: white;
     
 }
 
